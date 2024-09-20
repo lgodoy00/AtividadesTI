@@ -8,7 +8,7 @@ Este repositório contém atividades e exemplos de código para a disciplina TI2
 
 Para testar a aplicação, você precisa criar a tabela books no seu banco de dados PostgreSQL. Execute o seguinte comando SQL:
 
-sql
+   sql
 CREATE TABLE books (
     id SERIAL PRIMARY KEY,
     title VARCHAR(255) NOT NULL,
@@ -19,8 +19,7 @@ CREATE TABLE books (
 
 Configuração do BookDAO
 Atualize as variáveis de conexão no código BookDAO para corresponder às suas configurações de banco de dados PostgreSQL:
-
-java
+   java
 private final String url = "jdbc:postgresql://localhost:5432/postgres"; // URL do banco de dados
 private final String user = "postgres"; // Seu usuário do PostgreSQL
 private final String password = "admin"; // Sua senha do PostgreSQL
